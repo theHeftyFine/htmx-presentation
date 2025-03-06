@@ -1,6 +1,6 @@
 <h1>Parameters</h1>
 <div class="code-view">
-    <div>
+    <div class="render">
         <form hx-get="/form-answer" hx-target="#answer" hx-swap="outerHTML">
             <div><span>Voornaam:</span><input type="text" name="voornaam"/></div>
             <div><span>Achternaam:</span><input type="text" name="achternaam"/></div>
@@ -13,8 +13,37 @@
                 hx-vals='{"voornaam": "Hendrik", "achternaam": "Haan", "eigenschap": "een waterverspiller"}'>
             knop met vals
         </button>
+        <div>
+            <span id="answer">Stuur het formulier op!</span>
+        </div>
     </div>
-    <div>
-        <span id="answer">Stuur het formulier op!</span>
+    <div class="code">
+        <pre>
+&lt;form hx-get=&Prime;/form-answer&Prime; hx-target=&Prime;#answer&Prime; hx-swap=&Prime;outerHTML&Prime;&gt;
+    &lt;div&gt;
+        &lt;span&gt;Voornaam:&lt;/span&gt;&lt;input type=&Prime;text&Prime; name=&Prime;voornaam&Prime;/&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;span&gt;Achternaam:&lt;/span&gt;&lt;input type=&Prime;text&Prime; name=&Prime;achternaam&Prime;/&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;span&gt;Eigenschap:&lt;/span&gt;&lt;input type=&Prime;text&Prime; name=&Prime;eigenschap&Prime;/&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&Prime;submit&Prime; value=&Prime;submit&Prime;/&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;button hx-get=&Prime;/form-answer&Prime;
+        hx-target=&Prime;#answer&Prime;
+        hx-swap=&Prime;outerHTML&Prime;
+        hx-vals='{&Prime;voornaam&Prime;: &Prime;Hendrik&Prime;,
+             &Prime;achternaam&Prime;: &Prime;Haan&Prime;,
+             &Prime;eigenschap&Prime;: &Prime;een waterverspiller&Prime;}'&gt;
+    knop met vals
+&lt;/button&gt;
+&lt;div&gt;
+    &lt;span id=&Prime;answer&Prime;&gt;Stuur het formulier op!&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
     </div>
 </div>

@@ -7,22 +7,24 @@
         <span id="mouseenter"
              hx-get="/mouseenter.html"
              hx-trigger="mouseenter once"
-             hx-swap="outerHTML"
+             hx-swap="outerHTML swap:1s"
              class="border block">
             mouseenter once
         </span>
     </div>
     <div class="code">
       <pre>
-&lt;span hx-get=&Prime;color&Prime;
-         hx-trigger=&Prime;every 2s&Prime;
-         class=&Prime;color-1&Prime;&gt;
-             rainbows!
-&lt;/span&gt;
+&lt;div hx-get=&Prime;block color&Prime; hx-trigger=&Prime;every 2s&Prime; &gt;
+    &lt;span hx-get=&Prime;color&Prime;
+            hx-trigger=&Prime;every 2s&Prime;
+            class=&Prime;color-1&Prime;&gt;
+                rainbows!
+    &lt;/span&gt;
+&lt;/div&gt;
 &lt;span id=&Prime;mouseenter&Prime;
      hx-get=&Prime;/mouseenter.html&Prime;
      hx-trigger=&Prime;mouseenter once&Prime;
-     hx-swap=&Prime;outerHTML&Prime; class=&Prime;mouseenter&Prime;&gt;
+     hx-swap=&Prime;outerHTML swap:2s&Prime; class=&Prime;mouseenter&Prime;&gt;
     mouseenter once
 &lt;/span&gt;
       </pre>

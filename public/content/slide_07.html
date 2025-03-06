@@ -56,4 +56,61 @@
         </div>
 
     </div>
+    <div class="code" style="overflow-y: scroll;">
+        <pre>
+&lt;div&gt;
+    &lt;span id=&Prime;inner&Prime; class=&Prime;border&Prime;&gt;innnerHTML&lt;/span&gt;
+    &lt;button hx-get=&Prime;/inner.html&Prime;
+            hx-target=&Prime;#inner&Prime;
+            hx-swap=&Prime;innerHTML&Prime;&gt;
+        swap
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;span id=&Prime;outer&Prime; class=&Prime;border&Prime;&gt;outerHTML&lt;/span&gt;
+    &lt;button hx-get=&Prime;/inner.html&Prime;
+            hx-target=&Prime;#outer&Prime;
+            hx-swap=&Prime;outerHTML&Prime;&gt;
+        swap
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;span id=&Prime;delete&Prime; class=&Prime;border&Prime;&gt;delete&lt;/span&gt;
+    &lt;button hx-get=&Prime;/inner.html&Prime;
+            hx-target=&Prime;#delete&Prime;
+            hx-swap=&Prime;delete&Prime;&gt;
+        swap
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div&gt;
+        &lt;button hx-get=&Prime;/innerli.html&Prime;
+                hx-target=&Prime;#after&Prime;
+                hx-swap=&Prime;afterend&Prime;&gt;
+            afterend
+        &lt;/button&gt;
+        &lt;button hx-get=&Prime;/innerli.html&Prime;
+                hx-target=&Prime;#after&Prime;
+                hx-swap=&Prime;beforebegin&Prime;&gt;
+            beforebegin
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;button hx-get=&Prime;/innerli.html&Prime;
+                hx-target=&Prime;#afteril&Prime;
+                hx-swap=&Prime;beforeend&Prime;&gt;
+            afterbegin
+        &lt;/button&gt;
+        &lt;button hx-get=&Prime;/innerli.html&Prime;
+                hx-target=&Prime;#afteril&Prime;
+                hx-swap=&Prime;afterbegin&Prime;&gt;
+            afterbegin
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;ul id=&Prime;afteril&Prime;&gt;
+        &lt;li id=&Prime;after&Prime; class=&Prime;border&Prime;&gt;begin&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
 </div>

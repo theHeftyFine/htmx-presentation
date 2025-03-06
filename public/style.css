@@ -70,7 +70,11 @@ em {
     display: block;
 }
 
-.render {
+.strike {
+    text-decoration: line-through;
+}
+
+.render, .code {
     max-height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -95,6 +99,22 @@ em {
 
 .listhead {
     list-style: none;
+}
+
+.htmx-settling {
+    color: yellow;
+}
+
+.htmx-swapping {
+    color: blue;
+}
+
+.script {
+    display: inline-block;
+    padding: 4px;
+    background-color: lightblue;
+    border-radius: 2px;
+    color: black;
 }
 
 .color {
