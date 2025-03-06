@@ -97,6 +97,10 @@ em {
     list-style: none;
 }
 
+.color {
+    transition: all 1s ease-in;
+}
+
 .color-1 {
     color: red;
 }

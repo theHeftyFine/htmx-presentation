@@ -7,6 +7,12 @@
             <div><span>Eigenschap:</span><input type="text" name="eigenschap"/></div>
             <div><input type="submit" value="submit"/></div>
         </form>
+        <button hx-get="/form-answer"
+                hx-target="#answer"
+                hx-swap="outerHTML"
+                hx-vals='{"voornaam": "Hendrik", "achternaam": "Haan", "eigenschap": "een waterverspiller"}'>
+            knop met vals
+        </button>
     </div>
     <div>
         <span id="answer">Stuur het formulier op!</span>

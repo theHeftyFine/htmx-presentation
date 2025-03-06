@@ -1,7 +1,9 @@
 <h1>The following content can be triggering!</h1>
 <div class="code-view">
     <div class="render">
-        <span class="block" hx-get="color" hx-trigger="every 2s" class="color-1">rainbows!</span>
+        <div hx-get="block color" hx-trigger="every 2s" >
+            <span id="colored" class="block color color-1">rainbows!</span>
+        </div>
         <span id="mouseenter"
              hx-get="/mouseenter.html"
              hx-trigger="mouseenter once"

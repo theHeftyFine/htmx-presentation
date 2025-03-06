@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"gopkg.in/yaml.v2"
 	"html/template"
 	"log"
@@ -64,8 +63,6 @@ func handleSlide(w http.ResponseWriter, r *http.Request) {
 		// show next page if current page isn't the last in the list
 		pageData.Next = page + 1
 		pageData.HasNext = len(pages.Pages) > page
-
-		fmt.Printf("%+v\n", pageData)
 
 		tmpl, err := template.ParseFiles("./templates/slide.html")
 		if err != nil {
