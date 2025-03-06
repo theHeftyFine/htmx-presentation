@@ -1,59 +1,28 @@
-<h1>Swapping around</h1>
+<h1>The following content can be triggering!</h1>
 <div class="code-view">
     <div class="render">
-        <div>
-            <span id="inner" class="border">innnerHTML</span>
-            <button hx-get="/inner.html"
-                    hx-target="#inner"
-                    hx-swap="innerHTML">
-                swap
-            </button>
-        </div>
-        <div>
-            <span id="outer" class="border">outerHTML</span>
-            <button hx-get="/inner.html"
-                    hx-target="#outer"
-                    hx-swap="outerHTML">
-                swap
-            </button>
-        </div>
-        <div>
-            <span id="delete" class="border">delete</span>
-            <button hx-get="/inner.html"
-                    hx-target="#delete"
-                    hx-swap="delete">
-                swap
-            </button>
-        </div>
-        <div>
-            <div>
-                <button hx-get="/innerli.html"
-                        hx-target="#after"
-                        hx-swap="afterend">
-                    afterend
-                </button>
-                <button hx-get="/innerli.html"
-                        hx-target="#after"
-                        hx-swap="beforebegin">
-                    beforebegin
-                </button>
-            </div>
-            <div>
-                <button hx-get="/innerli.html"
-                        hx-target="#afteril"
-                        hx-swap="beforeend">
-                    afterbegin
-                </button>
-                <button hx-get="/innerli.html"
-                        hx-target="#afteril"
-                        hx-swap="afterbegin">
-                    afterbegin
-                </button>
-            </div>
-            <ul id="afteril">
-                <li id="after" class="border">begin</li>
-            </ul>
-        </div>
-
+        <span class="block" hx-get="color" hx-trigger="every 2s" class="color-1">rainbows!</span>
+        <span id="mouseenter"
+             hx-get="/mouseenter.html"
+             hx-trigger="mouseenter once"
+             hx-swap="outerHTML"
+             class="border block">
+            mouseenter once
+        </span>
+    </div>
+    <div class="code">
+      <pre>
+&lt;span hx-get=&Prime;color&Prime;
+         hx-trigger=&Prime;every 2s&Prime;
+         class=&Prime;color-1&Prime;&gt;
+             rainbows!
+&lt;/span&gt;
+&lt;span id=&Prime;mouseenter&Prime;
+     hx-get=&Prime;/mouseenter.html&Prime;
+     hx-trigger=&Prime;mouseenter once&Prime;
+     hx-swap=&Prime;outerHTML&Prime; class=&Prime;mouseenter&Prime;&gt;
+    mouseenter once
+&lt;/span&gt;
+      </pre>
     </div>
 </div>

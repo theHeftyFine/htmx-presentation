@@ -1,7 +1,59 @@
-<h1>Out of band</h1>
+<h1>Swapping around</h1>
 <div class="code-view">
     <div class="render">
-        <div id="oobswap" class="border">Dit element word out of band geswapt</div>
-        <button hx-get="/oob.html" hx-swap="outerHTML">Deze button wordt direct geswapt</button>
+        <div>
+            <span id="inner" class="border">innnerHTML</span>
+            <button hx-get="/inner.html"
+                    hx-target="#inner"
+                    hx-swap="innerHTML">
+                swap
+            </button>
+        </div>
+        <div>
+            <span id="outer" class="border">outerHTML</span>
+            <button hx-get="/inner.html"
+                    hx-target="#outer"
+                    hx-swap="outerHTML">
+                swap
+            </button>
+        </div>
+        <div>
+            <span id="delete" class="border">delete</span>
+            <button hx-get="/inner.html"
+                    hx-target="#delete"
+                    hx-swap="delete">
+                swap
+            </button>
+        </div>
+        <div>
+            <div>
+                <button hx-get="/innerli.html"
+                        hx-target="#after"
+                        hx-swap="afterend">
+                    afterend
+                </button>
+                <button hx-get="/innerli.html"
+                        hx-target="#after"
+                        hx-swap="beforebegin">
+                    beforebegin
+                </button>
+            </div>
+            <div>
+                <button hx-get="/innerli.html"
+                        hx-target="#afteril"
+                        hx-swap="beforeend">
+                    afterbegin
+                </button>
+                <button hx-get="/innerli.html"
+                        hx-target="#afteril"
+                        hx-swap="afterbegin">
+                    afterbegin
+                </button>
+            </div>
+            <ul id="afteril">
+                <li id="after" class="border">begin</li>
+            </ul>
+        </div>
+
     </div>
 </div>

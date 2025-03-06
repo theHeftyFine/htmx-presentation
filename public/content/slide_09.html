@@ -1,0 +1,14 @@
+<h1>Parameters</h1>
+<div class="code-view">
+    <div>
+        <form hx-get="/form-answer" hx-target="#answer" hx-swap="outerHTML">
+            <div><span>Voornaam:</span><input type="text" name="voornaam"/></div>
+            <div><span>Achternaam:</span><input type="text" name="achternaam"/></div>
+            <div><span>Eigenschap:</span><input type="text" name="eigenschap"/></div>
+            <div><input type="submit" value="submit"/></div>
+        </form>
+    </div>
+    <div>
+        <span id="answer">Stuur het formulier op!</span>
+    </div>
+</div>

@@ -87,6 +87,16 @@ em {
     font-size: small;
 }
 
+.bigyellow {
+    font-size: x-large;
+    font-weight: bold;
+    color: yellow;
+}
+
+.listhead {
+    list-style: none;
+}
+
 .color-1 {
     color: red;
 }
