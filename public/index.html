@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <script src="snow.js"></script>
+<!--    <script src="follow.js"></script>-->
+    <div class="container">
+        <div class="content">
+            <div class="slide"
+                 id="slide"></div>
+            <div class="footer" id="footer" hx-get="/slide/1"
+                                            hx-swap="outerHTML"
+                                            hx-trigger="load">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

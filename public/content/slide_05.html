@@ -1,0 +1,28 @@
+<h1>The following content can be triggering!</h1>
+<div class="code-view">
+    <div class="render">
+        <span class="block" hx-get="color" hx-trigger="every 2s" class="color-1">rainbows!</span>
+        <span id="mouseenter"
+             hx-get="/mouseenter.html"
+             hx-trigger="mouseenter once"
+             hx-swap="outerHTML"
+             class="border block">
+            mouseenter once
+        </span>
+    </div>
+    <div class="code">
+      <pre>
+&lt;span hx-get=&Prime;color&Prime;
+         hx-trigger=&Prime;every 2s&Prime;
+         class=&Prime;color-1&Prime;&gt;
+             rainbows!
+&lt;/span&gt;
+&lt;span id=&Prime;mouseenter&Prime;
+     hx-get=&Prime;/mouseenter.html&Prime;
+     hx-trigger=&Prime;mouseenter once&Prime;
+     hx-swap=&Prime;outerHTML&Prime; class=&Prime;mouseenter&Prime;&gt;
+    mouseenter once
+&lt;/span&gt;
+      </pre>
+    </div>
+</div>

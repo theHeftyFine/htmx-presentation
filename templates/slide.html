@@ -1,0 +1,31 @@
+<div class="slide"
+     id="slide"
+     hx-swap-oob="true"
+     hx-trigger="load"
+     hx-get="content/{{.Content}}"
+     hx-swap="innerHTML">
+</div>
+
+<div class="footer" id="footer">
+    {{if .HasPrev}}
+    <a href="#"
+       class="blue"
+       hx-get="/slide/{{.Prev}}"
+       hx-target="#footer"
+       hx-swap="outerHTML"
+       hx-trigger="click, keyup[key=='ArrowLeft'] from:body">&lt;</a>
+    {{end}}
+    <a href="#"
+       hx-get="/slide/1"
+       hx-target="#footer"
+       hx-swap="outerHTML"
+       hx-trigger="click">home</a>
+    {{if .HasNext}}
+    <a href="#"
+       class="blue"
+       hx-get="/slide/{{.Next}}"
+       hx-target="#footer"
+       hx-swap="outerHTML"
+       hx-trigger="click, keyup[key=='ArrowRight'] from:body">&gt;</a>
+    {{end}}
+</div>

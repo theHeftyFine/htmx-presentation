@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Courier new", monospace;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    min-height: 70vh;
+    margin-top: 10vh;
+}
+
+.content h1,h2 {
+    text-align: center;
+}
+
+.blue {
+    color: cornflowerblue;
+}
+
+a {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+
+em {
+    background-color: yellow;
+    color: darkblue;
+    padding: 3px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.snow {
+    color: red;
+    cursor: pointer;
+}
+
+.code-view {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.code-view div {
+    width: 100%;
+}
+
+.code-view * {
+    margin: 3px;
+}
+
+.block {
+    display: block;
+}
+
+.render {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.code-view .code {
+    background-color: white;
+    color: black;
+}
+
+.code pre {
+    font-family: "Courier new", monospace;
+    font-size: small;
+}
+
+.color-1 {
+    color: red;
+}
+
+.color-2 {
+    color: orange;
+}
+
+.color-3 {
+    color: yellow;
+}
+
+.color-4 {
+    color: green;
+}
+
+.color-5 {
+    color: blue;
+}
+
+.color-6 {
+    color: indigo;
+}
+
+.color-7 {
+    color: violet;
+}
+
+.border {
+    border: 1px white solid;
+    padding: 5px;
+}
+
